@@ -1,0 +1,133 @@
+Classfile /home/yuji/repos/gist/jjug_ccc_2023/bridge/Main.class
+  Last modified 2023/05/27; size 886 bytes
+  SHA-256 checksum 2a339b8aecd3d4c3c753165917bb3c819bf5809a09093ac48858329d5b95fe14
+  Compiled from "Main.java"
+public class Main
+  minor version: 0
+  major version: 64
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #9                          // Main
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 3
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Class              #8             // Main$IntegerNode
+   #8 = Utf8               Main$IntegerNode
+   #9 = Class              #10            // Main
+  #10 = Utf8               Main
+  #11 = Methodref          #9.#3          // Main."<init>":()V
+  #12 = Methodref          #7.#13         // Main$IntegerNode."<init>":(LMain;)V
+  #13 = NameAndType        #5:#14         // "<init>":(LMain;)V
+  #14 = Utf8               (LMain;)V
+  #15 = String             #16            // Hello
+  #16 = Utf8               Hello
+  #17 = Methodref          #18.#19        // Main$Node.setData:(Ljava/lang/Object;)V
+  #18 = Class              #20            // Main$Node
+  #19 = NameAndType        #21:#22        // setData:(Ljava/lang/Object;)V
+  #20 = Utf8               Main$Node
+  #21 = Utf8               setData
+  #22 = Utf8               (Ljava/lang/Object;)V
+  #23 = Fieldref           #7.#24         // Main$IntegerNode.data:Ljava/lang/Object;
+  #24 = NameAndType        #25:#26        // data:Ljava/lang/Object;
+  #25 = Utf8               data
+  #26 = Utf8               Ljava/lang/Object;
+  #27 = Class              #28            // java/lang/Integer
+  #28 = Utf8               java/lang/Integer
+  #29 = Fieldref           #30.#31        // java/lang/System.out:Ljava/io/PrintStream;
+  #30 = Class              #32            // java/lang/System
+  #31 = NameAndType        #33:#34        // out:Ljava/io/PrintStream;
+  #32 = Utf8               java/lang/System
+  #33 = Utf8               out
+  #34 = Utf8               Ljava/io/PrintStream;
+  #35 = Methodref          #36.#37        // java/io/PrintStream.println:(Ljava/lang/Object;)V
+  #36 = Class              #38            // java/io/PrintStream
+  #37 = NameAndType        #39:#22        // println:(Ljava/lang/Object;)V
+  #38 = Utf8               java/io/PrintStream
+  #39 = Utf8               println
+  #40 = Utf8               Code
+  #41 = Utf8               LineNumberTable
+  #42 = Utf8               LocalVariableTable
+  #43 = Utf8               this
+  #44 = Utf8               LMain;
+  #45 = Utf8               main
+  #46 = Utf8               ([Ljava/lang/String;)V
+  #47 = Utf8               args
+  #48 = Utf8               [Ljava/lang/String;
+  #49 = Utf8               in
+  #50 = Utf8               LMain$IntegerNode;
+  #51 = Utf8               n
+  #52 = Utf8               LMain$Node;
+  #53 = Utf8               x
+  #54 = Utf8               Ljava/lang/Integer;
+  #55 = Utf8               SourceFile
+  #56 = Utf8               Main.java
+  #57 = Utf8               NestMembers
+  #58 = Utf8               InnerClasses
+  #59 = Utf8               IntegerNode
+  #60 = Utf8               Node
+{
+  public Main();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 1: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   LMain;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=4, locals=4, args_size=1
+         0: new           #7                  // class Main$IntegerNode
+         3: dup
+         4: new           #9                  // class Main
+         7: dup
+         8: invokespecial #11                 // Method "<init>":()V
+        11: invokespecial #12                 // Method Main$IntegerNode."<init>":(LMain;)V
+        14: astore_1
+        15: aload_1
+        16: astore_2
+        17: aload_2
+        18: ldc           #15                 // String Hello
+        20: invokevirtual #17                 // Method Main$Node.setData:(Ljava/lang/Object;)V
+        23: aload_1
+        24: getfield      #23                 // Field Main$IntegerNode.data:Ljava/lang/Object;
+        27: checkcast     #27                 // class java/lang/Integer
+        30: astore_3
+        31: getstatic     #29                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        34: aload_3
+        35: invokevirtual #35                 // Method java/io/PrintStream.println:(Ljava/lang/Object;)V
+        38: return
+      LineNumberTable:
+        line 15: 0
+        line 16: 15
+        line 17: 17
+        line 19: 23
+        line 20: 31
+        line 21: 38
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      39     0  args   [Ljava/lang/String;
+           15      24     1    in   LMain$IntegerNode;
+           17      22     2     n   LMain$Node;
+           31       8     3     x   Ljava/lang/Integer;
+}
+SourceFile: "Main.java"
+NestMembers:
+  Main$IntegerNode
+  Main$Node
+InnerClasses:
+  public #59= #7 of #9;                   // IntegerNode=class Main$IntegerNode of class Main
+  public abstract #60= #18 of #9;         // Node=class Main$Node of class Main

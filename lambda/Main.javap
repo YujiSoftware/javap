@@ -1,0 +1,165 @@
+Classfile /home/yuji/repos/gist/jjug_ccc_2023/lambda/Main.class
+  Last modified 2023/05/27; size 1498 bytes
+  SHA-256 checksum 095d1ac24e188777210e311cbf13e6396a8f718319006528151209f45e5774df
+  Compiled from "Main.java"
+public class Main
+  minor version: 0
+  major version: 64
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #50                         // Main
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 3, attributes: 3
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Fieldref           #8.#9          // java/lang/System.out:Ljava/io/PrintStream;
+   #8 = Class              #10            // java/lang/System
+   #9 = NameAndType        #11:#12        // out:Ljava/io/PrintStream;
+  #10 = Utf8               java/lang/System
+  #11 = Utf8               out
+  #12 = Utf8               Ljava/io/PrintStream;
+  #13 = Class              #14            // java/lang/String
+  #14 = Utf8               java/lang/String
+  #15 = String             #16            // Hello
+  #16 = Utf8               Hello
+  #17 = String             #18            // world
+  #18 = Utf8               world
+  #19 = Methodref          #20.#21        // java/util/Arrays.stream:([Ljava/lang/Object;)Ljava/util/stream/Stream;
+  #20 = Class              #22            // java/util/Arrays
+  #21 = NameAndType        #23:#24        // stream:([Ljava/lang/Object;)Ljava/util/stream/Stream;
+  #22 = Utf8               java/util/Arrays
+  #23 = Utf8               stream
+  #24 = Utf8               ([Ljava/lang/Object;)Ljava/util/stream/Stream;
+  #25 = InvokeDynamic      #0:#26         // #0:applyAsInt:()Ljava/util/function/ToIntFunction;
+  #26 = NameAndType        #27:#28        // applyAsInt:()Ljava/util/function/ToIntFunction;
+  #27 = Utf8               applyAsInt
+  #28 = Utf8               ()Ljava/util/function/ToIntFunction;
+  #29 = InterfaceMethodref #30.#31        // java/util/stream/Stream.mapToInt:(Ljava/util/function/ToIntFunction;)Ljava/util/stream/IntStream;
+  #30 = Class              #32            // java/util/stream/Stream
+  #31 = NameAndType        #33:#34        // mapToInt:(Ljava/util/function/ToIntFunction;)Ljava/util/stream/IntStream;
+  #32 = Utf8               java/util/stream/Stream
+  #33 = Utf8               mapToInt
+  #34 = Utf8               (Ljava/util/function/ToIntFunction;)Ljava/util/stream/IntStream;
+  #35 = InterfaceMethodref #36.#37        // java/util/stream/IntStream.sum:()I
+  #36 = Class              #38            // java/util/stream/IntStream
+  #37 = NameAndType        #39:#40        // sum:()I
+  #38 = Utf8               java/util/stream/IntStream
+  #39 = Utf8               sum
+  #40 = Utf8               ()I
+  #41 = Methodref          #42.#43        // java/io/PrintStream.println:(I)V
+  #42 = Class              #44            // java/io/PrintStream
+  #43 = NameAndType        #45:#46        // println:(I)V
+  #44 = Utf8               java/io/PrintStream
+  #45 = Utf8               println
+  #46 = Utf8               (I)V
+  #47 = Methodref          #13.#48        // java/lang/String.length:()I
+  #48 = NameAndType        #49:#40        // length:()I
+  #49 = Utf8               length
+  #50 = Class              #51            // Main
+  #51 = Utf8               Main
+  #52 = Utf8               Code
+  #53 = Utf8               LineNumberTable
+  #54 = Utf8               LocalVariableTable
+  #55 = Utf8               this
+  #56 = Utf8               LMain;
+  #57 = Utf8               main
+  #58 = Utf8               ([Ljava/lang/String;)V
+  #59 = Utf8               args
+  #60 = Utf8               [Ljava/lang/String;
+  #61 = Utf8               lambda$main$0
+  #62 = Utf8               (Ljava/lang/String;)I
+  #63 = Utf8               s
+  #64 = Utf8               Ljava/lang/String;
+  #65 = Utf8               SourceFile
+  #66 = Utf8               Main.java
+  #67 = Utf8               BootstrapMethods
+  #68 = MethodHandle       6:#69          // REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #69 = Methodref          #70.#71        // java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #70 = Class              #72            // java/lang/invoke/LambdaMetafactory
+  #71 = NameAndType        #73:#74        // metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #72 = Utf8               java/lang/invoke/LambdaMetafactory
+  #73 = Utf8               metafactory
+  #74 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+  #75 = MethodType         #76            //  (Ljava/lang/Object;)I
+  #76 = Utf8               (Ljava/lang/Object;)I
+  #77 = MethodHandle       6:#78          // REF_invokeStatic Main.lambda$main$0:(Ljava/lang/String;)I
+  #78 = Methodref          #50.#79        // Main.lambda$main$0:(Ljava/lang/String;)I
+  #79 = NameAndType        #61:#62        // lambda$main$0:(Ljava/lang/String;)I
+  #80 = MethodType         #62            //  (Ljava/lang/String;)I
+  #81 = Utf8               InnerClasses
+  #82 = Class              #83            // java/lang/invoke/MethodHandles$Lookup
+  #83 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #84 = Class              #85            // java/lang/invoke/MethodHandles
+  #85 = Utf8               java/lang/invoke/MethodHandles
+  #86 = Utf8               Lookup
+{
+  public Main();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   LMain;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=5, locals=1, args_size=1
+         0: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: iconst_2
+         4: anewarray     #13                 // class java/lang/String
+         7: dup
+         8: iconst_0
+         9: ldc           #15                 // String Hello
+        11: aastore
+        12: dup
+        13: iconst_1
+        14: ldc           #17                 // String world
+        16: aastore
+        17: invokestatic  #19                 // Method java/util/Arrays.stream:([Ljava/lang/Object;)Ljava/util/stream/Stream;
+        20: invokedynamic #25,  0             // InvokeDynamic #0:applyAsInt:()Ljava/util/function/ToIntFunction;
+        25: invokeinterface #29,  2           // InterfaceMethod java/util/stream/Stream.mapToInt:(Ljava/util/function/ToIntFunction;)Ljava/util/stream/IntStream;
+        30: invokeinterface #35,  1           // InterfaceMethod java/util/stream/IntStream.sum:()I
+        35: invokevirtual #41                 // Method java/io/PrintStream.println:(I)V
+        38: return
+      LineNumberTable:
+        line 5: 0
+        line 6: 38
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      39     0  args   [Ljava/lang/String;
+
+  private static int lambda$main$0(java.lang.String);
+    descriptor: (Ljava/lang/String;)I
+    flags: (0x100a) ACC_PRIVATE, ACC_STATIC, ACC_SYNTHETIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokevirtual #47                 // Method java/lang/String.length:()I
+         4: ireturn
+      LineNumberTable:
+        line 5: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0     s   Ljava/lang/String;
+}
+SourceFile: "Main.java"
+BootstrapMethods:
+  0: #68 REF_invokeStatic java/lang/invoke/LambdaMetafactory.metafactory:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #75 (Ljava/lang/Object;)I
+      #77 REF_invokeStatic Main.lambda$main$0:(Ljava/lang/String;)I
+      #80 (Ljava/lang/String;)I
+InnerClasses:
+  public static final #86= #82 of #84;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles

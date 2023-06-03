@@ -1,0 +1,59 @@
+Classfile /home/yuji/repos/gist/jjug_ccc_2023/interface/Main.class
+  Last modified 2023/05/27; size 392 bytes
+  SHA-256 checksum 5ba4dd46616d4f077486d1380000ad1bd7da92486a5b92b6c9f6d1db2ae4fb9f
+  Compiled from "Main.java"
+public interface Main extends java.lang.Runnable
+  minor version: 0
+  major version: 64
+  flags: (0x0601) ACC_PUBLIC, ACC_INTERFACE, ACC_ABSTRACT
+  this_class: #15                         // Main
+  super_class: #17                        // java/lang/Object
+  interfaces: 1, fields: 0, methods: 2, attributes: 1
+Constant pool:
+   #1 = Fieldref           #2.#3          // java/lang/System.out:Ljava/io/PrintStream;
+   #2 = Class              #4             // java/lang/System
+   #3 = NameAndType        #5:#6          // out:Ljava/io/PrintStream;
+   #4 = Utf8               java/lang/System
+   #5 = Utf8               out
+   #6 = Utf8               Ljava/io/PrintStream;
+   #7 = String             #8             // Hello world.
+   #8 = Utf8               Hello world.
+   #9 = Methodref          #10.#11        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #10 = Class              #12            // java/io/PrintStream
+  #11 = NameAndType        #13:#14        // println:(Ljava/lang/String;)V
+  #12 = Utf8               java/io/PrintStream
+  #13 = Utf8               println
+  #14 = Utf8               (Ljava/lang/String;)V
+  #15 = Class              #16            // Main
+  #16 = Utf8               Main
+  #17 = Class              #18            // java/lang/Object
+  #18 = Utf8               java/lang/Object
+  #19 = Class              #20            // java/lang/Runnable
+  #20 = Utf8               java/lang/Runnable
+  #21 = Utf8               run
+  #22 = Utf8               ()V
+  #23 = Utf8               main
+  #24 = Utf8               ([Ljava/lang/String;)V
+  #25 = Utf8               Code
+  #26 = Utf8               LineNumberTable
+  #27 = Utf8               SourceFile
+  #28 = Utf8               Main.java
+{
+  public abstract void run();
+    descriptor: ()V
+    flags: (0x0401) ACC_PUBLIC, ACC_ABSTRACT
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #1                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: ldc           #7                  // String Hello world.
+         5: invokevirtual #9                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+         8: return
+      LineNumberTable:
+        line 6: 0
+        line 7: 8
+}
+SourceFile: "Main.java"

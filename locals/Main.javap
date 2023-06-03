@@ -1,0 +1,125 @@
+Classfile /home/yuji/repos/gist/jjug_ccc_2023/locals/Main.class
+  Last modified 2023/05/27; size 652 bytes
+  SHA-256 checksum aed79e67aaf893b689f3075f9b1878c5e2d29f18dd01fa7c56c5783be4d81dea
+  Compiled from "Main.java"
+public class Main
+  minor version: 0
+  major version: 64
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #19                         // Main
+  super_class: #2                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 3, attributes: 1
+Constant pool:
+   #1 = Methodref          #2.#3          // java/lang/Object."<init>":()V
+   #2 = Class              #4             // java/lang/Object
+   #3 = NameAndType        #5:#6          // "<init>":()V
+   #4 = Utf8               java/lang/Object
+   #5 = Utf8               <init>
+   #6 = Utf8               ()V
+   #7 = Fieldref           #8.#9          // java/lang/System.out:Ljava/io/PrintStream;
+   #8 = Class              #10            // java/lang/System
+   #9 = NameAndType        #11:#12        // out:Ljava/io/PrintStream;
+  #10 = Utf8               java/lang/System
+  #11 = Utf8               out
+  #12 = Utf8               Ljava/io/PrintStream;
+  #13 = Methodref          #14.#15        // java/io/PrintStream.println:(I)V
+  #14 = Class              #16            // java/io/PrintStream
+  #15 = NameAndType        #17:#18        // println:(I)V
+  #16 = Utf8               java/io/PrintStream
+  #17 = Utf8               println
+  #18 = Utf8               (I)V
+  #19 = Class              #20            // Main
+  #20 = Utf8               Main
+  #21 = Utf8               Code
+  #22 = Utf8               LineNumberTable
+  #23 = Utf8               LocalVariableTable
+  #24 = Utf8               this
+  #25 = Utf8               LMain;
+  #26 = Utf8               main
+  #27 = Utf8               ([Ljava/lang/String;)V
+  #28 = Utf8               args
+  #29 = Utf8               [Ljava/lang/String;
+  #30 = Utf8               foo
+  #31 = Utf8               i
+  #32 = Utf8               I
+  #33 = Utf8               StackMapTable
+  #34 = Utf8               SourceFile
+  #35 = Utf8               Main.java
+{
+  public Main();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 1: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   LMain;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=0, locals=1, args_size=1
+         0: return
+      LineNumberTable:
+        line 3: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       1     0  args   [Ljava/lang/String;
+
+  public static void foo();
+    descriptor: ()V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=0
+         0: iconst_0
+         1: istore_0
+         2: iload_0
+         3: iconst_3
+         4: if_icmpge     20
+         7: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        10: iload_0
+        11: invokevirtual #13                 // Method java/io/PrintStream.println:(I)V
+        14: iinc          0, 1
+        17: goto          2
+        20: iconst_0
+        21: istore_0
+        22: iload_0
+        23: iconst_3
+        24: if_icmpge     40
+        27: getstatic     #7                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        30: iload_0
+        31: invokevirtual #13                 // Method java/io/PrintStream.println:(I)V
+        34: iinc          0, 1
+        37: goto          22
+        40: return
+      LineNumberTable:
+        line 6: 0
+        line 7: 7
+        line 6: 14
+        line 9: 20
+        line 10: 27
+        line 9: 34
+        line 12: 40
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            2      18     0     i   I
+           22      18     0     i   I
+      StackMapTable: number_of_entries = 4
+        frame_type = 252 /* append */
+          offset_delta = 2
+          locals = [ int ]
+        frame_type = 250 /* chop */
+          offset_delta = 17
+        frame_type = 252 /* append */
+          offset_delta = 1
+          locals = [ int ]
+        frame_type = 250 /* chop */
+          offset_delta = 17
+}
+SourceFile: "Main.java"

@@ -1,0 +1,114 @@
+Classfile /home/yuji/repos/gist/jjug_ccc_2023/field/Main.class
+  Last modified 2023/05/27; size 606 bytes
+  SHA-256 checksum 13e3693b4ffa6cd2b2310cb0c1dbdaf76f2196e57baf08ad25d517beedc668a8
+  Compiled from "Main.java"
+public class Main
+  minor version: 0
+  major version: 64
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #2                          // Main
+  super_class: #8                         // java/lang/Object
+  interfaces: 0, fields: 1, methods: 4, attributes: 1
+Constant pool:
+   #1 = Fieldref           #2.#3          // Main.year:I
+   #2 = Class              #4             // Main
+   #3 = NameAndType        #5:#6          // year:I
+   #4 = Utf8               Main
+   #5 = Utf8               year
+   #6 = Utf8               I
+   #7 = Methodref          #8.#9          // java/lang/Object."<init>":()V
+   #8 = Class              #10            // java/lang/Object
+   #9 = NameAndType        #11:#12        // "<init>":()V
+  #10 = Utf8               java/lang/Object
+  #11 = Utf8               <init>
+  #12 = Utf8               ()V
+  #13 = Fieldref           #14.#15        // java/lang/System.out:Ljava/io/PrintStream;
+  #14 = Class              #16            // java/lang/System
+  #15 = NameAndType        #17:#18        // out:Ljava/io/PrintStream;
+  #16 = Utf8               java/lang/System
+  #17 = Utf8               out
+  #18 = Utf8               Ljava/io/PrintStream;
+  #19 = Methodref          #20.#21        // java/io/PrintStream.println:(I)V
+  #20 = Class              #22            // java/io/PrintStream
+  #21 = NameAndType        #23:#24        // println:(I)V
+  #22 = Utf8               java/io/PrintStream
+  #23 = Utf8               println
+  #24 = Utf8               (I)V
+  #25 = String             #26            // Hello world.
+  #26 = Utf8               Hello world.
+  #27 = Methodref          #20.#28        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #28 = NameAndType        #23:#29        // println:(Ljava/lang/String;)V
+  #29 = Utf8               (Ljava/lang/String;)V
+  #30 = Utf8               getYear
+  #31 = Utf8               ()I
+  #32 = Utf8               Code
+  #33 = Utf8               LineNumberTable
+  #34 = Utf8               setYear
+  #35 = Utf8               main
+  #36 = Utf8               ([Ljava/lang/String;)V
+  #37 = Utf8               SourceFile
+  #38 = Utf8               Main.java
+{
+  private int year;
+    descriptor: I
+    flags: (0x0002) ACC_PRIVATE
+
+  public int getYear();
+    descriptor: ()I
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: getfield      #1                  // Field year:I
+         4: ireturn
+      LineNumberTable:
+        line 6: 0
+
+  public void setYear(int);
+    descriptor: (I)V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=2, args_size=2
+         0: aload_0
+         1: iload_1
+         2: putfield      #1                  // Field year:I
+         5: return
+      LineNumberTable:
+        line 10: 0
+        line 11: 5
+
+  public Main();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #7                  // Method java/lang/Object."<init>":()V
+         4: aload_0
+         5: sipush        2023
+         8: putfield      #1                  // Field year:I
+        11: getstatic     #13                 // Field java/lang/System.out:Ljava/io/PrintStream;
+        14: aload_0
+        15: getfield      #1                  // Field year:I
+        18: invokevirtual #19                 // Method java/io/PrintStream.println:(I)V
+        21: return
+      LineNumberTable:
+        line 13: 0
+        line 3: 4
+        line 14: 11
+        line 15: 21
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #13                 // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: ldc           #25                 // String Hello world.
+         5: invokevirtual #27                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+         8: return
+      LineNumberTable:
+        line 18: 0
+        line 19: 8
+}
+SourceFile: "Main.java"
